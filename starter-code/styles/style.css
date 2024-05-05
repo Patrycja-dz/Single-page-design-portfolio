@@ -65,6 +65,9 @@ h6 {
 body {
   background-color: var(--light-cream);
   font-family: var(--ff-family);
+  h3 {
+    text-align: center;
+  }
 }
 .primary-header {
   text-align: center;
@@ -79,7 +82,8 @@ body {
   font-style: normal;
   text-align: center;
   font-size: clamp(2.25rem, 2.75rem, 3.5rem);
-  margin-block: 1rem;
+  margin-block-start: 3rem;
+  margin-block-end: 1rem;
 }
 .subheading {
   font-optical-sizing: auto;
@@ -87,7 +91,7 @@ body {
   font-style: normal;
 
   /* font-size: clamp(1.625rem, 2rem, 2.5rem); */
-  font-size: var(--fs-m);
+  font-size: 26px;
 }
 .text {
   color: var(--medium-brown);
@@ -97,6 +101,8 @@ body {
 .header_text {
   max-width: 60%;
   margin-inline: auto;
+  margin-block-start: 0.65rem;
+  line-height: 1.65;
 }
 .container {
   max-width: 1110px;
@@ -116,9 +122,11 @@ body {
   border: none;
   font-weight: 800;
   font-family: var(--ff-family);
-  padding-inline: 2.5rem;
+  padding-inline: 2.95rem;
   border-radius: 28px;
   transition: 500ms ease-in-out;
+  padding-block: -3.5rem;
+  margin-block: 0.25rem;
 }
 
 .nav__cta {
@@ -219,10 +227,36 @@ div.discipline:nth-of-type(6) {
 .person-description {
   padding-block: 2rem;
   display: flex;
-  gap: 2.45rem;
+  gap: 1.5rem;
 
   /* justify-content: space-evenly; */
   flex-direction: column;
+  button {
+    background-color: var(--light-red);
+    margin-right: auto;
+    padding-block: 1.1rem;
+    margin-inline: auto;
+  }
+  button:hover {
+    box-shadow: inset 14.5em 0 0 0 var(--summer-yellow);
+  }
+  .subheading,
+  .text {
+    text-align: center;
+  }
+}
+.contact {
+  background-color: var(--black);
+  color: var(--light-cream);
+  padding-block: 40px;
+  /* padding-inline-start: 36px; */
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-inline: auto;
+  margin-block: 45px;
+  border-radius: 10px;
+  place-items: center;
+  gap: 2rem;
   button {
     background-color: var(--light-red);
     margin-right: auto;
@@ -231,6 +265,19 @@ div.discipline:nth-of-type(6) {
   button:hover {
     box-shadow: inset 14.5em 0 0 0 var(--summer-yellow);
   }
+}
+
+.contact__content {
+  text-align: center;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: 36ch;
+  p {
+    padding-block: 24px;
+  }
+}
+footer {
+  padding-block: 1rem;
 }
 @keyframes move {
   50% {
@@ -246,7 +293,8 @@ div.discipline:nth-of-type(6) {
     display: grid;
     width: 100%;
     height: 364px;
-    margin-block: 3.5rem;
+    margin-block-start: 4rem;
+    /* margin-block: 3.5rem; */
     grid-template-areas:
       "design design ui apps photography photography"
       "design design ilustrations ilustrations motion motion";
@@ -256,6 +304,33 @@ div.discipline:nth-of-type(6) {
     display: grid;
     grid-template-columns: 445px 1fr;
     gap: 125px;
+  }
+  .subheading {
+    font-size: var(--fs-m);
+  }
+  .person-description {
+    display: flex;
+    gap: 2.45rem;
+
+    /* justify-content: space-evenly; */
+    flex-direction: column;
+    button {
+      background-color: var(--light-red);
+      margin-right: auto;
+      padding-block: 1.1rem;
+      margin-inline-start: 0;
+    }
+
+    .subheading,
+    .text {
+      text-align: start;
+    }
+  }
+  .contact {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact__content {
+    text-align: start;
   }
 }
 
@@ -272,6 +347,9 @@ div.discipline:nth-of-type(6) {
   .header_text {
     font-size: var(--fs-xs);
   }
+  .subheading {
+    font-size: var(--fs-s);
+  }
   .design-disciplines {
     display: grid;
     width: 100%;
@@ -287,6 +365,30 @@ div.discipline:nth-of-type(6) {
     grid-template-columns: 445px 1fr;
     .person {
       left: -50px;
+    }
+  }
+  .contact__content {
+    text-align: center;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    max-width: 50ch;
+  }
+  .person-description {
+    display: flex;
+    gap: 2.45rem;
+
+    /* justify-content: space-evenly; */
+    flex-direction: column;
+    button {
+      background-color: var(--light-red);
+      margin-right: auto;
+      padding-block: 1.1rem;
+      margin-inline-start: 0;
+    }
+
+    .subheading,
+    .text {
+      text-align: start;
     }
   }
 }
