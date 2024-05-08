@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Demo](https://github.com/Patrycja-dz/Single-page-design-portfolio)
+- Live Site URL: [Github](https://patrycja-dz.github.io/Single-page-design-portfolio/)
 
 ## My process
 
