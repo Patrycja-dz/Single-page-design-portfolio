@@ -1,6 +1,8 @@
 # Frontend Mentor - Single-page design portfolio solution
 
-This is a solution to the [Single-page design portfolio challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/singlepage-design-portfolio-2MMhyhfKVo). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Single-page design portfolio challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/singlepage-design-portfolio-2MMhyhfKVo). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+In this project, I explored the creation of a functional gallery utilizing the new tool, Swiper, which prioritizes accessibility (a11y). Through this endeavor, I aimed to deepen my understanding of exceptional user experiences and inclusive design principles.
 
 ## Table of contents
 
@@ -11,14 +13,12 @@ This is a solution to the [Single-page design portfolio challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+This project provided me with invaluable insights into the intricacies of creating user-centric galleries while upholding accessibility standards. Through the integration of Swiper and the incorporation of custom animations, I have not only expanded my technical skill set but also enriched the overall usability and appeal of the project. I introduced several bespoke animations to imbue the project with a dynamic and visually appealing flair. These animations not only enhance the aesthetic appeal but also contribute to a more engaging user experience.
 
 ### The challenge
 
@@ -27,18 +27,11 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Navigate the slider using either their mouse/trackpad or keyboard
+- See some enjoyable CSS animations
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshot.png)
 
 ### Links
 
@@ -53,60 +46,44 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- CSS animations
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Swiper](https://swiperjs.com/) - Swiper
+- [Vite](https://vitejs.dev/) - Frontend tooling
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+In this project, I explored the creation of a functional gallery utilizing the new tool, Swiper, which prioritizes accessibility (a11y). Through this endeavor, I aimed to deepen my understanding of exceptional user experiences and inclusive design principles. Also project allowed me to better understand gris-areas.
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+
+```css and its transitions
+.person-container__background {
+  position: absolute;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  inset: auto 0 0;
+}
+.person-container__avatar {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  transition: transform 450ms ease-in-out;
+}
+.person-container__avatar:hover {
+  transform: scale(1.1);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Resource 1](https://www.youtube.com/watch?v=1zDRqHifoX0) - This helped me for creation of an animated pop-out effect. I really liked this pattern and will use it going forward if possible.
+- [Example resource 2](https://www.youtube.com/watch?v=qOO6lVMhmGc) - This is an amazing video which helped me finally work with SwiperJs and PL
+  How make Responsive Card Slider
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
