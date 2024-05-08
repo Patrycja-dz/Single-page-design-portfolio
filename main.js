@@ -1,6 +1,9 @@
-import Swiper from "swiper/bundle";
-import "swiper/css";
-
+// import Swiper from "swiper";
+// import { Navigation, Pagination } from "swiper/modules";
+// // import Swiper and modules styles
+// import "swiper/css";
+// import "swiper/css/navigation";
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 const swiper = new Swiper(".swiper", {
   loop: true,
   direction: "horizontal",
