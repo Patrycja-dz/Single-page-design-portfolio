@@ -1,25 +1,45 @@
-// import Swiper from "swiper";
-// import { Navigation, Pagination } from "swiper/modules";
-// // import Swiper and modules styles
-// import "swiper/css";
-// import "swiper/css/navigation";
-import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  direction: "horizontal",
-  navigation: {
-    nextEl: ".arrow-next",
-    prevEl: ".arrow-prev",
-  },
-  spaceBetween: 50,
-  grabCursor: true,
-  fade: true,
-  breakpoints: {
-    // When screen width is less than 768px (mobile devices)
-    768: {
-      slidesPerView: 3, // Display one slide per view
-    },
+// const nextSlide = document.querySelector(".arrow-next");
+// const prevSlide = document.querySelector(".arrow-prev");
+// const slides = document.querySelectorAll(".slide");
+// const scrollContainer = document.querySelector(".scroll-container");
 
-    // You can add more breakpoints as needed
-  },
+// // scrollContainer.addEventListener("scroll", (e) => {
+// //   e.preventDefault();
+// //   scrollContainer.scrollLeft += 500;
+// //   console.log((scrollContainer.scrollLeft += e.scrollX));
+// // });
+
+// // nextSlide.addEventListener("click", () => {
+// //   scrollContainer.scrollLeft += 500;
+// // });
+// // prevSlide.addEventListener("click", () => {
+// //   scrollContainer.scrollLeft -= 500;
+// // });
+// nextSlide.addEventListener("click", () => {
+//   const currentScroll = scrollContainer.scrollLeft;
+//   const slideWidth = slides[0].offsetWidth;
+//   scrollContainer.scrollLeft = currentScroll + slideWidth * 5; // Scroll to the next set of three images
+// });
+
+// prevSlide.addEventListener("click", () => {
+//   const currentScroll = scrollContainer.scrollLeft;
+//   const slideWidth = slides[0].offsetWidth;
+//   scrollContainer.scrollLeft = currentScroll - slideWidth * 5; // Scroll to the previous set of three images
+// });
+// //const nextSlide = document.querySelector(".arrow-next");
+const nextSlide = document.querySelector(".arrow-next");
+const prevSlide = document.querySelector(".arrow-prev");
+const slides = document.querySelectorAll(".slide");
+const scrollContainer = document.querySelector(".scroll-container");
+
+nextSlide.addEventListener("click", () => {
+  const currentScroll = scrollContainer.scrollLeft;
+  const slideWidth = slides[0].offsetWidth;
+  scrollContainer.scrollLeft = currentScroll + slideWidth * 3; // Scroll to the next set of three images
+});
+
+prevSlide.addEventListener("click", () => {
+  const currentScroll = scrollContainer.scrollLeft;
+  const slideWidth = slides[0].offsetWidth;
+  scrollContainer.scrollLeft = currentScroll - slideWidth * 3; // Scroll to the previous set of three images
 });
