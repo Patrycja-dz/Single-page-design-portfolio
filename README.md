@@ -18,7 +18,7 @@ In this project, I explored the creation of a functional gallery utilizing the n
 
 ## Overview
 
-This project provided me with invaluable insights into the intricacies of creating user-centric galleries while upholding accessibility standards. Through the integration of Swiper and the incorporation of custom animations, I have not only expanded my technical skill set but also enriched the overall usability and appeal of the project. I introduced several bespoke animations to imbue the project with a dynamic and visually appealing flair. These animations not only enhance the aesthetic appeal but also contribute to a more engaging user experience.
+This project provided me with invaluable insights into the intricacies of creating user-centric galleries. Through the incorporation of custom animations, I have not only expanded my technical skill set but also enriched the overall usability and appeal of the project. I introduced several bespoke animations to imbue the project with a dynamic and visually appealing flair. These animations not only enhance the aesthetic appeal but also contribute to a more engaging user experience.
 
 ### The challenge
 
@@ -26,7 +26,6 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Navigate the slider using either their mouse/trackpad or keyboard
 - See some enjoyable CSS animations
 
 ### Screenshot
@@ -48,12 +47,11 @@ Users should be able to:
 - CSS Grid
 - CSS animations
 - Mobile-first workflow
-- [Swiper](https://swiperjs.com/) - Swiper
 - [Vite](https://vitejs.dev/) - Frontend tooling
 
 ### What I learned
 
-In this project, I explored the creation of a functional gallery utilizing the new tool, Swiper, which prioritizes accessibility (a11y). Through this endeavor, I aimed to deepen my understanding of exceptional user experiences and inclusive design principles. Also project allowed me to better understand gris-areas.
+Through this endeavor, I aimed to deepen my understanding of exceptional user experiences and inclusive design principles. Also project allowed me to better understand gris-areas.
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
@@ -81,8 +79,6 @@ In this project, I explored the creation of a functional gallery utilizing the n
 ### Useful resources
 
 - [Resource 1](https://www.youtube.com/watch?v=1zDRqHifoX0) - This helped me for creation of an animated pop-out effect. I really liked this pattern and will use it going forward if possible.
-- [Example resource 2](https://www.youtube.com/watch?v=qOO6lVMhmGc) - This is an amazing video which helped me finally work with SwiperJs and PL
-  How make Responsive Card Slider
 
 ## Author
 
